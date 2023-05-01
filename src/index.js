@@ -11,7 +11,6 @@ let insertCountry;
 
 function searchCountry(arraycountry, countrySearch){   
     let coincidences = arraycountry.filter((country) => country.name.common.toUpperCase().includes(countrySearch.toUpperCase()));
-    console.log(coincidences);
     if(coincidences.length < 1){
         countrylist.style.display="none";
         countryInfo.style.display="none";
