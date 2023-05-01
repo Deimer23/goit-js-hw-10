@@ -57,6 +57,7 @@ function searchCountry(arraycountry, countrySearch){
     }
 }
 
+
 name.addEventListener('input', debounce( (e)=>{    
     e.preventDefault();
     fetchCountries().then((country)=> searchCountry(country, name.value))
